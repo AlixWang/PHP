@@ -10,7 +10,21 @@
 
 
 	/*
-		array_walk()
+		array_walk($value,$key,$elments)
 
 	*/
+		//定义数组
+		$arr=['name'=>'wangjun','sex'=>'famle','age'=>22];
 
+		//定义处理函数
+
+
+		//引用函数$ 用来对原函数进行改变
+		function test(&$value,$key,$arguments){
+			$value=$value.$arguments;
+		}
+
+		$arr1=array_walk($arr,'test','hello');
+		echo "<pre>";
+		print_r($arr);
+		echo "</pre>";

@@ -11,6 +11,7 @@
 
 	/*
 		array_walk($value,$key,$elments)
+		返回值是布尔类型，参数只能有三个
 
 	*/
 		//定义数组

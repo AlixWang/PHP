@@ -3,6 +3,7 @@
 	/*
 		array_values() 重组数组使得索引值重新排列
 
+
 	*/
 	
 	$arr=["one","two","three","fore"];

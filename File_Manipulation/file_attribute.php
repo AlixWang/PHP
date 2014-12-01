@@ -28,9 +28,9 @@
                 echo "文件可执行";
             }
             //获取文件时间
-            echo date(Y-m-d H:i:s,filectime($filename));
-            echo date(Y-m-d H:i:s,fileatime($filename));
-            echo date(Y-m-d H:i:s,filemtime($filename));
+            echo date('Y-m-d H:i:s',filectime($filename));
+            echo date('Y-m-d H:i:s',fileatime($filename));
+            echo date('Y-m-d H:i:s',filemtime($filename));
             //获取文件大小
           function   getfilesize($filename){
                $size=filesize($filename);
@@ -51,7 +51,7 @@
                     $size=$size;
                     $dw="Bytes";
                 }
-                return $size,$dw;
+                return $size $dw;
             }
         }
     

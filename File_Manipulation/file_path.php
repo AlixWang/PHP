@@ -10,9 +10,17 @@
 
 5、路径解析函数
      basename()   //文件信息
-      pathname()   //路径信息
+      dirname()   //路径信息
       pathinfo()     //包含路径信息的数组
 
     */
     mkdir("/home/AlixWang/Desktop/test");   
     
+    //basename&&pathname&&pathinfo
+    echo(basename("/var/www/html/PHP/GitHub/File_Manipulation/file_path.php"));
+        echo "<hr>";
+    echo(dirname("/var/www/html/PHP/GitHub
+        /File_Manipulation/file_path.php"));
+        echo "<hr>";
+    print_r(pathinfo("/var/www/html/PHP/GitHub
+        /File_Manipulation/file_path.php"));

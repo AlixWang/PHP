@@ -20,14 +20,17 @@
           
           }
           else{
+            //if the soursesrc is not exist then creat it
             mkdir($soursesrc);
             }
         $dir=opendir($dirname);
         while($filename=readdir($dir)){
             if($filename!="."&&$filename!=".."){
+                //对路径进行重定向
                 $filesrc=$dirname."/".$filename;
                 $sourseto=$soursesrc."/".$filename;
                 if(is_dir($filesrc)){
+                    //递归对子目录进行处理
                     copydir($filesrc,$sourseto);     
                 }
                 else{

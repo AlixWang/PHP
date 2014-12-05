@@ -37,5 +37,5 @@
     
     }
 
-    dfcount("/var/www/html/PHP/GitHub");
+    dfcount("test");
     echo $dcount."<br>".$fcount;

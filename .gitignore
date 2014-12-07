@@ -1,3 +1,6 @@
 #ignore File_Manipulation/test/*
 File_Maniputation/message.txt
 File_Manipulation/test*
+#ignore *.jpg file
+*.jpg
+*.png

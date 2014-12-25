@@ -8,8 +8,8 @@
 		$host=$matches[2];
 		$port=$matches[3]?$matches[3]:($proto=='http'||'https'?80:443);
 
-		echo "Protocol:"$proto;
-		echo "host:"$host;
-		echo "Port:"$port;
+		echo "Protocol:".$proto;
+		echo "host:".$host;
+		echo "Port:".$port;
 	}
 

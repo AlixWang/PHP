@@ -26,6 +26,8 @@
 		echo "Protocol:".$proto;
 		echo "host:".$host;
 		echo "Port:".$port;
+        echo "<pre>";
         print_r($matches);
+        echo "</pre>";
 	}
 

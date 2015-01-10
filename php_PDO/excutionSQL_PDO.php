@@ -13,9 +13,16 @@
      *
      * */
     
-     $efect_rows=$db->exec("create table user");
+     $create_table=$db->exec("CREATE TABLE user(id SMALLINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,username VARCHAR(20) NOT NULL)");
 
-     echo $efect_rows;
+     $insert_value=$db->exec("INSERT user(username) VALUES('wagnjun')");
+
+     $select_values=$db->query("SELECT * FROM user");
+
+     foreach($select_values as $value){
+        print_r($value);
+     
+     }
 
 
 

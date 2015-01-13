@@ -14,7 +14,11 @@
 
  //填充画布
     imagefill($img,0,0,$red);
-       
+ 
+ //划线
+    imageline($img,0,0,200,200,$blue);
+    imageline($img,0,200,200,0,$blue);
+
  //保存图象
     //imagepng($img,'./test.png');
     //imagegif($img,'./test,gif');
